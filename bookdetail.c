@@ -24,7 +24,18 @@ void main(){
 			case 1:
                 printf("enter the number of books to be entered : ");
 	            scanf("%d",&num);
-	            
+	            for(i=0;i<num;i++){
+		            printf("\n book %d details",i+1);
+		
+		            printf("\nenter the book name : ");
+		            scanf("%s",b[i].name);
+		            printf("\nenter the author name : ");
+		            scanf("%s",b[i].author);
+		            printf("\nenter the book id : ");
+		            scanf("%d",&b[i].id);
+		            printf("\nenter the book price : ");
+		            scanf("%f",&b[i].price);
+	            }
 			    break;
 			case 2:
 			
@@ -72,7 +83,17 @@ void main(){
 			case 4:
 				while(b[num].name=='\0'){
 					num++;
-				
+				}
+				int t=1;
+            	for(i=0;i<num;i++,t++){
+		        printf("\n");
+		        printf("book number %d\n",t);
+		        printf("\tbook %d name is=%s \n",t,b[i].name);
+		        printf("\tbook %d author is=%s \n",t,b[i].author);
+		        printf("\tbook %d pages is=%d \n",t,b[i].id);
+		        printf("\tbook %d name is=%f \n",t,b[i].price);
+	         	printf("\n");
+	            }
 	            break;
 	        case 5:
 	        	printf("\n program exit.....");

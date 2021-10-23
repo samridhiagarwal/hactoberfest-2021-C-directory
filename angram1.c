@@ -4,12 +4,17 @@ int main(){
 	char a[100],b[100];
 	printf("enter two words to check anagram : ");
     scanf("%s %s",a,b);
+    while(a[c]!='\0'){
+    	c++;
+	}
+	while(b[d]!='\0'){
+		d++;
 	}
     for(i=0;i<c;i++){
     	while(b[e]==a[i]){
     		e=e+1;
 		}
-		printf("it is");
+		printf("it is a anagram");
 	}
-    return 1;
+	return 0;
 }

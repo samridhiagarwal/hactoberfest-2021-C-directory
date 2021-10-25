@@ -11,7 +11,7 @@ int main(){
 		d++;
 	}
     for(i=0;i<c;i++){
-    	while(b[e]==a[i]){
+    	while(b[e]!=a[i]){
     		e=e+1;
 		}
 		printf("it is a anagram");

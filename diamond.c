@@ -1,26 +1,44 @@
 #include<stdio.h>
 
-int main() {
+int main() 
+{
     int n, i, j;
     printf("\nEnter the value of N: ");
     scanf("%d", &n);
     printf("\n");
-    for (i = 1; i <= n; i++) {
-        for (j = 1; j <= (n - i); j++) {
-            printf(" ");
-        }
-        for (j = 1; j <= (2 * (i)-1); j++) {
-            printf("*");
+    for (int i = 0; i <= n / 2; i++)
+    {
+        for (int j = 0; j <= n; j++)
+        {
+
+            if (j >= n / 2 - i && j <= n / 2 + i)
+            {
+                printf(" *");
+            }
+
+            else
+            {
+                printf("  ");
+            }
         }
         printf("\n");
     }
-    for (i = (n - 1); i >= 1; i--) {
-        for (j = 1; j <= n - i; j++) {
-            printf(" ");
-        }
-        for (j = 1; j <= (2 * i) - 1; j++) {
-            printf("*");
+
+    for (int i = 1; i <= n / 2; i++)
+    {
+        for (int j = n; j >= 0; j--)
+        {
+            if (j >= i && j <= n - i)
+            {
+                printf(" *");
+            }
+
+            else
+            {
+                printf("  ");
+            }
         }
         printf("\n");
     }
+    return 0;
 }

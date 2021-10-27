@@ -39,12 +39,7 @@ void debug_out(vector<string> args, int idx, int LINE_NUM, Head H, Tail...T) {
 int main() {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-    pair<char, int> one('A', 1);
-    pair<char, int> two('B', 2);
-    cout << one.first << " " << one.second << "\n";
-    cout << two.first << " " << two.second << "\n";
-    one.swap(two);
-    cout << one.first << " " << one.second << "\n";
-    cout << two.first << " " << two.second << "\n";
+    int a=5;
+    debug(a);
     return 0;
 }

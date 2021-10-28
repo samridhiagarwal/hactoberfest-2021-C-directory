@@ -1,20 +1,43 @@
 #include <stdio.h>
+#include <string.h>
 int main(){
-	int i=0,c=0,d=0,e,f;
-	char a[100],b[100];
-	printf("enter two words to check anagram : ");
-    scanf("%s %s",a,b);
-    while(a[c]!='\0'){
-    	c++;
+	int n=0,n1=0;
+	char s1[10];
+	char s2[10];
+	char temp;
+	printf("enter 1st word: ");
+	scanf("%s",s1);
+	printf("enter 2nd word: ");
+	scanf("%s",s2);
+	int i,j;
+	while(s1[n]!='\0')
+	    n++;
+	while(s2[n1]!='\0')
+	    n1++;
+	if(n != n1){
+		printf("\n%s and %s are not anagram! \n",s1,s2);
+		return 0;
 	}
-	while(b[d]!='\0'){
-		d++;
-	}
-    for(i=0;i<c;i++){
-    	while(b[e]==a[i]){
-    		e=e+1;
+	for(i=0;i<n-1;i++){
+		for(j=i+1;j<n;j++){
+		    if(s1[i] > s1[j]){
+			    temp = s1[i];
+			    s1[i] = s1[j];
+			    s1[j] = temp;
+		    }
+		    if(s2[i] > s2[j]){
+			    temp = s2[i];
+			    s2[i] = s2[j];
+			    s2[j] = temp;
+		   }
+	    }
+    }
+	for(i=0;i<n;i++){
+		if(s1[i]!=s2[i]){
+			printf("both string are not anagram");
+			return 0;
 		}
-		printf("it is a anagram");
 	}
+	printf("both strings are anagram");
 	return 0;
 }

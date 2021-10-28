@@ -2,23 +2,9 @@
 <div align="center">
   <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" />
   </div>
-Follow the README below to get started!
+Follow the README below to get started! 🔥 
 
-
-## Note : This repo is excluded from the Hacktoberfest but you can still contribute and the reason is importance of DSA, yourcontribution will be for lifelong.
-
-
-
-## Table of contents
-
-- [Getting Started](#getting-started)
-- [The Process](#the-process)
-
-## Getting Started
-
-Before you begin, please follow my other [account](https://github.com/Aditya664) and contribute to projects over there.
-
-## The Process
+## The Process  ✅
 
 1. Fork this repository
 2. Run `git clone [your repo url goes here]`
